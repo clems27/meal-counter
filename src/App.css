@@ -1,4 +1,5 @@
 .App {
+  height: 100vh;
   text-align: center;
 }
 
@@ -30,4 +31,79 @@
   to {
     transform: rotate(360deg);
   }
+}
+.button {
+  margin-left: 10px;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  display: inline-block;
+  font-weight: 400;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  border-radius: .25rem;
+  margin: 10px;
+  width:80px;
+  margin-right: 20px;
+}
+.header{
+  background-color: #61dafb;
+  margin: 10px;
+  
+}
+li{
+  list-style-type: none;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color:#6666ff;
+}
+
+.scroll-bar {
+  width:100%;
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+}
+.scroll-bar h3 {
+ font-size: 1em;
+ color: blue;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-bar 15s linear infinite;
+ -webkit-animation: scroll-bar 15s linear infinite;
+ animation: scroll-bar 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-bar {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-bar {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-bar {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%); 
+ }
 }
