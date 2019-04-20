@@ -13,13 +13,15 @@ class App extends Component {
     return (
       <div className="App">
         <Heading />
-        <CounterButton title="Vegan" />
-        <CounterButton title="Halal" />
-        <CounterButton title="Veggie" />
-        <CounterButton title="Kosher" />
-        <CounterButton title="Meat" />
-        <CounterButton title="Sides" />
-        <CounterButton title="Drinks" />
+        <div class="CounterButton__wrapper">
+          <CounterButton title="Vegan" />
+          <CounterButton title="Halal" />
+          <CounterButton title="Veggie" />
+          <CounterButton title="Kosher" />
+          <CounterButton title="Meat" />
+          <CounterButton title="Sides" />
+          <CounterButton title="Drinks" />
+        </div>
         <Footer contactInfo={contactInfo} />
       </div>
     );
