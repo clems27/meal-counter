@@ -42,6 +42,7 @@ class Heading extends Component {
             This app makes ordering food for a group more easier.
           </h3>
         </div>
+        <hr />
       </header>
     );
   }
