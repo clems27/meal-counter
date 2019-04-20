@@ -36,10 +36,10 @@ class Heading extends Component {
           alt="logo"
         />
         <h1>Meal Counter</h1>
-        <div class="scroll-bar">
+        <div className="scroll-bar">
           <h3>
             Wether you just want to order for a single person or for a group!
-            This app makes ordering food for a group more easier{" "}
+            This app makes ordering food for a group more easier.
           </h3>
         </div>
       </header>
