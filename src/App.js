@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <div className="App">
         <Heading />
-        <div class="CounterButton__wrapper">
+        <div className="CounterButton__wrapper">
           <CounterButton title="Vegan" />
           <CounterButton title="Halal" />
           <CounterButton title="Veggie" />
